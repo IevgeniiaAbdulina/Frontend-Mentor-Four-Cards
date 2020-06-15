@@ -64,20 +64,25 @@ header p {
   color: var(--neutral-color-grayish-blue);
   margin: 20px;
   text-align: center;
-  width: 550px;
+  max-width: 550px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  max-width: 350px;
   height: auto;
-  padding: 30px;
-  margin: 30px;
+  margin: 16px;
   border-radius: 8px;
   background-color: var(--neutral-color-very-light-gray);
-  box-shadow: 0 10px 20px var(--neutral-color-grayish-blue),
-    0 6px 6px var(--neutral-color-very-dark-blue);
+  box-shadow: 0 10px 20px var(--neutral-color-very-light-gray),
+    0 6px 12px var(--neutral-color-grayish-blue);
 }
 
 #supervisor {
@@ -97,24 +102,24 @@ header p {
 }
 
 h3 {
-  font-size: 16px;
-  padding-bottom: 12px;
+  font-size: 18px;
+  padding: 20px 0 12px 20px;
   font-weight: var(--font-weight-semi-bold);
   color: var(--neutral-color-very-dark-blue);
 }
 
 .card p {
-  font-size: 14px;
-  padding-bottom: 40px;
+  font-size: 16px;
+  padding: 0 20px 40px 20px;
   font-weight: var(--font-weight-extra-light);
   color: var(--neutral-color-grayish-blue);
 }
 
 .icon {
-  display: block;
   width: 64px;
   height: 64px;
-  margin-left: 286px;
+  align-self: flex-end;
+  margin: 20px;
 }
 
 #supervisor span {
@@ -131,4 +136,47 @@ h3 {
 
 #calculator span {
   background: url("./images/icon-calculator.svg");
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 40px;
+  padding: 0 40px;
+  font-size: 12px;
+  font-weight: var(--font-weight-extra-light);
+  color: var(--neutral-color-grayish-blue);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color-blue);
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1250px),
+  (min-width: 1440px) {
+  #karma.card {
+    order: 4;
+  }
+
+  #supervisor.card,
+  #calculator.card {
+    position: relative;
+    top: 150px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  header {
+    justify-content: center;
+  }
+
+  header p {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin: 12px 30px;
+  }
 }
