@@ -154,6 +154,13 @@ a {
   color: var(--primary-color-blue);
 }
 
+@media only screen and (min-width: 1640px) {
+  main {
+    width: 80vw;
+    margin: auto;
+  }
+}
+
 @media only screen and (max-width: 1440px) and (min-width: 1250px),
   (min-width: 1440px) {
   #karma.card {
