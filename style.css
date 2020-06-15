@@ -28,4 +28,107 @@ body {
   padding: 0px;
   width: 100%;
   height: auto;
+  background-color: var(--neutral-color-very-light-gray);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0 60px 0;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: var(--font-weight-extra-light);
+  color: var(--neutral-color-very-dark-blue);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var(--font-weight-semi-bold);
+  color: var(--neutral-color-very-dark-blue);
+}
+
+header p {
+  font-size: 16px;
+  font-weight: var(--font-weight-regular);
+  color: var(--neutral-color-grayish-blue);
+  margin: 20px;
+  text-align: center;
+  width: 550px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: auto;
+  padding: 30px;
+  margin: 30px;
+  border-radius: 8px;
+  background-color: var(--neutral-color-very-light-gray);
+  box-shadow: 0 10px 20px var(--neutral-color-grayish-blue),
+    0 6px 6px var(--neutral-color-very-dark-blue);
+}
+
+#supervisor {
+  border-top: 4px solid var(--primary-color-cyan);
+}
+
+#team-builder {
+  border-top: 4px solid var(--primary-color-red);
+}
+
+#karma {
+  border-top: 4px solid var(--primary-color-orange);
+}
+
+#calculator {
+  border-top: 4px solid var(--primary-color-blue);
+}
+
+h3 {
+  font-size: 16px;
+  padding-bottom: 12px;
+  font-weight: var(--font-weight-semi-bold);
+  color: var(--neutral-color-very-dark-blue);
+}
+
+.card p {
+  font-size: 14px;
+  padding-bottom: 40px;
+  font-weight: var(--font-weight-extra-light);
+  color: var(--neutral-color-grayish-blue);
+}
+
+.icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin-left: 286px;
+}
+
+#supervisor span {
+  background: url("./images/icon-supervisor.svg");
+}
+
+#team-builder span {
+  background: url("./images/icon-team-builder.svg");
+}
+
+#karma span {
+  background: url("./images/icon-karma.svg");
+}
+
+#calculator span {
+  background: url("./images/icon-calculator.svg");
 }
